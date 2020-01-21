@@ -1,6 +1,5 @@
 import './styles/main.scss'
 import footerTemplate from './footer-template'
-console.log('dev mode...');
 
 const footerContent = {
     en: {
@@ -43,16 +42,10 @@ const footerContent = {
     }
 }
 
-
 // #1 Get all elements has `stc-footer` class
 const stcFooterElements = document.querySelectorAll('.stc-footer');
 stcFooterElements.forEach(el => {
     const footerLang = el.classList.contains('ar') ? 'ar' : 'en';
     const stcLogo = el.classList.contains('dark-theme') ? 'stc-logo-white' : 'stc-logo';
-    // console.log();
     el.innerHTML = footerTemplate(footerContent[footerLang], stcLogo)
 });
-
-
-
-// ---------------------footer content-----------------
