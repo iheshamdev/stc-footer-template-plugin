@@ -1,6 +1,5 @@
-const footerTemplate = () => {
+const footerTemplate = (className) => {
     return `
-    <div class="stc-footer en">
     <div class="about-stc">
         <div class="stc-logo">
             <img src="https://poll.laywagif.com/assets/images/stc-logo.png" alt="STC logo" />
@@ -84,7 +83,6 @@ const footerTemplate = () => {
                rel="noopener">Terms and Conditions</a>
         </div>
     </div>
-</div>
     `
 }
 

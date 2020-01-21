@@ -25,10 +25,16 @@ ul {
 }
 
 .stc-footer {
-  background-color: #fff;
+  background-color: transparent;
   font-size: 15px;
   &.ar {
     direction: rtl;
+  }
+  &.light-theme {
+    background-color: #fff;
+  }
+  &.dark-theme {
+    background-color: #323643;
   }
   * {
     color: #868e96 !important;
