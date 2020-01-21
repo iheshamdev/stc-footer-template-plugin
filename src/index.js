@@ -42,8 +42,8 @@ const footerContent = {
     }
 }
 
-// #1 Get all elements has `stc-footer` class
-const stcFooterElements = document.querySelectorAll('.stc-footer');
+// #1 Get all elements has `stc-footer-template` class
+const stcFooterElements = document.querySelectorAll('.stc-footer-template');
 stcFooterElements.forEach(el => {
     const footerLang = el.classList.contains('ar') ? 'ar' : 'en';
     const stcLogo = el.classList.contains('dark-theme') ? 'stc-logo-white' : 'stc-logo';

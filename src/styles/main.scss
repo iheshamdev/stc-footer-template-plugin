@@ -24,7 +24,7 @@ a {
   text-decoration: none;
 }
 
-.stc-footer {
+.stc-footer-template {
   background-color: #fff;
   font-size: 15px;
   * {
@@ -93,14 +93,14 @@ a {
 }
 
 // Themes
-.stc-footer.dark-theme {
+.stc-footer-template.dark-theme {
   background-color: #323643;
   .about-stc {
     border-bottom: 1px solid rgba(239, 243, 243, 0.2);
   }
 }
 
-.stc-footer.ar {
+.stc-footer-template.ar {
   direction: rtl;
   .about-stc {
     .stc-logo img {
@@ -126,7 +126,7 @@ a {
 }
 
 @media screen and (max-width: 860px) {
-  .stc-footer {
+  .stc-footer-template {
     .about-stc {
       flex-direction: column;
       justify-content: center;
