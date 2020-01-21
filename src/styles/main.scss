@@ -1,0 +1,131 @@
+// GLOBAL STYLING
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  font-family: "STCForward";
+  font-weight: normal;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.stc-footer {
+  background-color: #fff;
+  border-top: 4px solid #eff3f3;
+  font-size: 15px;
+  &.ar {
+    direction: rtl;
+  }
+  &.en {
+    direction: ltr;
+  }
+  * {
+    color: #868e96 !important;
+  }
+  .about-stc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eff3f3;
+    .stc-logo {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 24px;
+      }
+    }
+    .social-media-links {
+      p {
+        margin-bottom: 10px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          margin-right: 24px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  /* Copyright */
+  .copyright {
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .stc-logo-copyright {
+      display: flex;
+      align-items: center;
+      a {
+        display: flex;
+        img {
+          margin-right: 15px;
+        }
+      }
+    }
+    .copyright-links {
+      a {
+        transition: 0.3s ease-in-out;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      span {
+        margin: 0 4px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 860px) {
+  .stc-footer {
+    .about-stc {
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 20px;
+      .stc-logo img {
+        margin-right: 18px;
+      }
+      .social-media-links {
+        display: flex;
+        align-items: center;
+        margin-top: 28px;
+        p {
+          margin-right: 30px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .copyright {
+      flex-direction: row;
+      justify-content: center;
+      padding: 30px 20px 40px;
+      flex-direction: column-reverse;
+      .stc-logo-copyright {
+        margin-top: 16px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
