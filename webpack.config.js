@@ -1,13 +1,8 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
 
 module.exports = {
     mode: "development",
-    output: {
-        filename: 'stc-footer-template-plugin.min.js',
-        path: path.resolve(__dirname, 'dist')
-    },
     module: {
         rules: [
             {
