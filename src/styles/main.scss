@@ -25,17 +25,8 @@ ul {
 }
 
 .stc-footer {
-  background-color: transparent;
+  background-color: #fff;
   font-size: 15px;
-  &.ar {
-    direction: rtl;
-  }
-  &.light-theme {
-    background-color: #fff;
-  }
-  &.dark-theme {
-    background-color: #323643;
-  }
   * {
     color: #868e96 !important;
   }
@@ -81,6 +72,7 @@ ul {
       align-items: center;
       a {
         display: flex;
+        margin-top: -5px;
         img {
           margin-right: 15px;
         }
@@ -99,6 +91,40 @@ ul {
     }
   }
 }
+
+// Themes
+.stc-footer.dark-theme {
+  background-color: #323643;
+  .about-stc {
+    border-bottom: 1px solid rgba(239, 243, 243, 0.2);
+  }
+}
+
+.stc-footer.ar {
+  direction: rtl;
+  .about-stc {
+    .stc-logo img {
+      margin-left: 24px;
+      margin-right: 0;
+    }
+    .social-media-links ul li {
+      margin-left: 24px;
+      margin-right: 0;
+      &:last-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  .copyright {
+    .stc-logo-copyright {
+      a img {
+        margin-left: 15px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 860px) {
   .stc-footer {
     .about-stc {

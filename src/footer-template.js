@@ -1,12 +1,12 @@
-const footerTemplate = (className) => {
+const footerTemplate = (footerContent, stcLogo) => {
     return `
     <div class="about-stc">
         <div class="stc-logo">
-            <img src="https://poll.laywagif.com/assets/images/stc-logo.png" alt="STC logo" />
-            <p>part of stc initiatives</p>
+            <img src="https://poll.laywagif.com/assets/images/${stcLogo}.png" alt="STC logo" />
+            <p>${footerContent.stc_initiatives}</p>
         </div>
         <div class="social-media-links">
-            <p>Follow us</p>
+            <p>${footerContent.follow_us}</p>
             <ul>
                 <li>
                     <a href="https://twitter.com/stc" target="_blank" rel="noopener">
@@ -63,24 +63,24 @@ const footerTemplate = (className) => {
                      src="https://poll.laywagif.com/assets/images/stc-logo-copyright.png"
                      alt="stc logo copyright" />
             </a>
-            <p>copyright © 2020 stc. all rights reserved</p>
+            <p>${footerContent.copyright}</p>
         </div>
 
         <div class="copyright-links">
             <a
-               href="https://www.stc.com.sa/wps/wcm/connect/arabic/helpAndSupport/contact"
+               href="${footerContent.copyright_links.contact_us.url}"
                target="_blank"
-               rel="noopener">contact us</a>
+               rel="noopener">${footerContent.copyright_links.contact_us.text}</a>
             <span>.</span>
             <a
-               href="http://www.stc.com.sa/wps/wcm/connect/arabic/privacyStatement/Privacy+Statement"
+               href="${footerContent.copyright_links.privacy_policy.url}"
                target="_blank"
-               rel="noopener">privacy policy</a>
+               rel="noopener">${footerContent.copyright_links.privacy_policy.text}</a>
             <span>.</span>
             <a
-               href="https://www.stc.com.sa/wps/wcm/connect/arabic/individual/static/terms-conditions"
+               href="${footerContent.copyright_links.terms_and_conditions.url}"
                target="_blank"
-               rel="noopener">Terms and Conditions</a>
+               rel="noopener">${footerContent.copyright_links.terms_and_conditions.text}</a>
         </div>
     </div>
     `
