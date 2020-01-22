@@ -45,7 +45,7 @@ const footerContent = {
 // #1 Get all elements has `stc-footer-template` class
 const stcFooterElements = document.querySelectorAll('.stc-footer-template');
 stcFooterElements.forEach(el => {
-    const footerLang = el.classList.contains('ar') ? 'ar' : 'en';
-    const stcLogo = el.classList.contains('dark-theme') ? 'stc-logo-white' : 'stc-logo';
+    const footerLang = el.classList.contains('stc-ar') ? 'ar' : 'en';
+    const stcLogo = el.classList.contains('stc-dark-theme') ? 'stc-logo-white' : 'stc-logo';
     el.innerHTML = footerTemplate(footerContent[footerLang], stcLogo)
 });

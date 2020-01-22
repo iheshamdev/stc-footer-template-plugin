@@ -1,11 +1,11 @@
 const footerTemplate = (footerContent, stcLogo) => {
     return `
-    <div class="about-stc">
-        <div class="stc-logo">
+    <div class="stc-footer--about-stc">
+        <div class="stc-footer--logo">
             <img src="https://poll.laywagif.com/assets/images/${stcLogo}.png" alt="STC logo" />
             <p>${footerContent.stc_initiatives}</p>
         </div>
-        <div class="social-media-links">
+        <div class="stc-footer--follow-us">
             <p>${footerContent.follow_us}</p>
             <ul>
                 <li>
@@ -56,8 +56,8 @@ const footerTemplate = (footerContent, stcLogo) => {
             </ul>
         </div>
     </div>
-    <div class="copyright">
-        <div class="stc-logo-copyright">
+    <div class="stc-footer--copyright">
+        <div class="stc-footer--copyright-content">
             <a href="http://stc.com.sa" target="_blank" rel="noopener">
                 <img
                      src="https://poll.laywagif.com/assets/images/stc-logo-copyright.png"
@@ -66,7 +66,7 @@ const footerTemplate = (footerContent, stcLogo) => {
             <p>${footerContent.copyright}</p>
         </div>
 
-        <div class="copyright-links">
+        <div class="stc-footer--copyright-links">
             <a
                href="${footerContent.copyright_links.contact_us.url}"
                target="_blank"

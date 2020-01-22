@@ -30,21 +30,21 @@ a {
   * {
     color: #868e96 !important;
   }
-  .about-stc {
+  .stc-footer--about-stc {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 50px;
     flex-wrap: wrap;
     border-bottom: 1px solid #eff3f3;
-    .stc-logo {
+    .stc-footer--logo {
       display: flex;
       align-items: center;
       img {
         margin-right: 24px;
       }
     }
-    .social-media-links {
+    .stc-footer--follow-us {
       p {
         margin-bottom: 10px;
       }
@@ -60,14 +60,14 @@ a {
       }
     }
   }
-  /* Copyright */
-  .copyright {
+  /* stc-footer--copyright */
+  .stc-footer--copyright {
     padding: 30px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    .stc-logo-copyright {
+    .stc-footer--copyright-content {
       display: flex;
       align-items: center;
       a {
@@ -78,7 +78,7 @@ a {
         }
       }
     }
-    .copyright-links {
+    .stc-footer--copyright-links {
       a {
         transition: 0.3s ease-in-out;
         &:hover {
@@ -93,21 +93,21 @@ a {
 }
 
 // Themes
-.stc-footer-template.dark-theme {
+.stc-footer-template.stc-dark-theme {
   background-color: #323643;
-  .about-stc {
+  .stc-footer--about-stc {
     border-bottom: 1px solid rgba(239, 243, 243, 0.2);
   }
 }
 
-.stc-footer-template.ar {
+.stc-footer-template.stc-ar {
   direction: rtl;
-  .about-stc {
-    .stc-logo img {
+  .stc-footer--about-stc {
+    .stc-footer--logo img {
       margin-left: 24px;
       margin-right: 0;
     }
-    .social-media-links ul li {
+    .stc-footer--follow-us ul li {
       margin-left: 24px;
       margin-right: 0;
       &:last-of-type {
@@ -115,26 +115,24 @@ a {
       }
     }
   }
-  .copyright {
-    .stc-logo-copyright {
-      a img {
-        margin-left: 15px;
-        margin-right: 0;
-      }
+  .stc-footer--copyright {
+    .stc-footer--copyright-content a img {
+      margin-left: 15px;
+      margin-right: 0;
     }
   }
 }
 
 @media screen and (max-width: 860px) {
   .stc-footer-template {
-    .about-stc {
+    .stc-footer--about-stc {
       flex-direction: column;
       justify-content: center;
       padding: 40px 20px;
-      .stc-logo img {
+      .stc-footer--logo img {
         margin-right: 18px;
       }
-      .social-media-links {
+      .stc-footer--follow-us {
         display: flex;
         align-items: center;
         margin-top: 28px;
@@ -144,12 +142,12 @@ a {
         }
       }
     }
-    .copyright {
+    .stc-footer--copyright {
       flex-direction: row;
       justify-content: center;
       padding: 30px 20px 40px;
       flex-direction: column-reverse;
-      .stc-logo-copyright {
+      .stc-footer--logo-stc-footer--copyright {
         margin-top: 16px;
         p {
           font-size: 14px;
