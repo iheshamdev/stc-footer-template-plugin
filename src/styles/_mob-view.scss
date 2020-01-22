@@ -22,16 +22,21 @@
     padding: 30px 20px;
     flex-direction: column-reverse;
     .stc-footer--copyright-content {
-      margin-top: 8px;
+      margin-top: 18px;
       height: 40px;
+      a {
+        display: none;
+      }
       p {
         font-size: 14px !important;
+        line-height: 24px;
+        text-align: center;
       }
     }
     .stc-footer--copyright-links {
       text-align: center !important;
       a {
-        line-height: 30px;
+        line-height: 26px;
         white-space: nowrap;
       }
     }
