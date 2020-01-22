@@ -1,5 +1,6 @@
 // GLOBAL STYLING
 @import "./fonts";
+@import "./mob-view";
 
 * {
   box-sizing: border-box;
@@ -72,7 +73,7 @@ a {
       align-items: center;
       a {
         display: flex;
-        margin-top: -5px;
+        // margin-top: -5px;
         img {
           margin-right: 15px;
         }
@@ -119,40 +120,6 @@ a {
     .stc-footer--copyright-content a img {
       margin-left: 15px;
       margin-right: 0;
-    }
-  }
-}
-
-@media screen and (max-width: 860px) {
-  .stc-footer-template {
-    .stc-footer--about-stc {
-      flex-direction: column;
-      justify-content: center;
-      padding: 40px 20px;
-      .stc-footer--logo img {
-        margin-right: 18px;
-      }
-      .stc-footer--follow-us {
-        display: flex;
-        align-items: center;
-        margin-top: 28px;
-        p {
-          margin-right: 30px;
-          margin-bottom: 0;
-        }
-      }
-    }
-    .stc-footer--copyright {
-      flex-direction: row;
-      justify-content: center;
-      padding: 30px 20px 40px;
-      flex-direction: column-reverse;
-      .stc-footer--logo-stc-footer--copyright {
-        margin-top: 16px;
-        p {
-          font-size: 14px;
-        }
-      }
     }
   }
 }

@@ -40,12 +40,19 @@ const footerContent = {
             }
         }
     }
-}
+};
 
-// #1 Get all elements has `stc-footer-template` class
+// Select all footers and inject the template inside of each one
 const stcFooterElements = document.querySelectorAll('.stc-footer-template');
 stcFooterElements.forEach(el => {
     const footerLang = el.classList.contains('stc-ar') ? 'ar' : 'en';
     const stcLogo = el.classList.contains('stc-dark-theme') ? 'stc-logo-white' : 'stc-logo';
     el.innerHTML = footerTemplate(footerContent[footerLang], stcLogo)
 });
+
+// Responsive process 
+function applyMobView() {
+    stcFooterElements.forEach(el => el.offsetWidth <= 860 || window.innerWidth <= 860 ? el.classList.add('mob-view') : el.classList.remove('mob-view'))
+}
+applyMobView();
+window.onresize = e => applyMobView();
