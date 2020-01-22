@@ -4,12 +4,12 @@ stc-footer-template-plugin has been created to help Qays's team with the issue o
 ## Usage
 1. Add this script `<script src="https://stc-footer-template-plugin.netlify.com/main.js"></script>` before `</body>`
 2. Create an empty div with class `.stc-footer-template` (**required**)
-3. The default **language** of the footer is **English**, if you want to implement **Arabic** lang add `.ar` class to our element.
-4. The default **theme** of the footer is **light**, if you want to implement the **dark** theme add `.dark-theme` class to our element
+3. The default **language** of the footer is **English**, if you want to implement **Arabic** lang add `.stc-ar` class to our element.
+4. The default **theme** of the footer is **light**, if you want to implement the **dark** theme add `.stc-dark-theme` class to our element
 
     Here we are
     ```html
-    <div class="stc-footer-template ar dark-theme"></div>
+    <div class="stc-footer-template stc-ar stc-dark-theme"></div>
     ```
     This div is going to create the stc-footer, **Arabic** language and the **dark-theme** will be implemented.
   
