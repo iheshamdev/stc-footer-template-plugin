@@ -1,16 +1,20 @@
-const footerTemplate = (footerContent, stcLogo) => {
-    return `
+const footerTemplate = (footerContent, footerTheme) => {
+  return `
     <div class="stc-footer--about-stc">
         <div class="stc-footer--logo">
-            <img src="https://poll.laywagif.com/assets/images/${stcLogo}.png" alt="STC logo" />
-            <p>${footerContent.stc_initiatives}</p>
+            <img src="https://assets.laywagif.com/assets/img/${
+              footerTheme === 'dark' ? 'stc-logo-white' : 'stc-logo'
+            }.png" alt="STC logo" />
+            <p>${footerContent.stc_initiatives}</p> 
         </div>
         <div class="stc-footer--follow-us">
             <p>${footerContent.follow_us}</p>
             <ul>
                 <li>
                     <a href="https://twitter.com/stc" target="_blank" rel="noopener">
-                        <img src="https://poll.laywagif.com/assets/images/twitter.png" alt="Twitter" />
+                        <img src="https://assets.laywagif.com/assets/img/social/${
+                          footerTheme === 'dark' ? 'twitter-white' : 'twitter'
+                        }.png" alt="Twitter" />
                     </a>
                 </li>
                 <li>
@@ -18,7 +22,9 @@ const footerTemplate = (footerContent, stcLogo) => {
                        href="https://www.youtube.com/user/STCsaudiarabia"
                        target="_blank"
                        rel="noopener">
-                        <img src="https://poll.laywagif.com/assets/images/youtube.png" alt="Youtube" />
+                        <img src="https://assets.laywagif.com/assets/img/social/${
+                          footerTheme === 'dark' ? 'youtube-white' : 'youtube'
+                        }.png" alt="Youtube" />
                     </a>
                 </li>
                 <li>
@@ -26,7 +32,9 @@ const footerTemplate = (footerContent, stcLogo) => {
                        href="https://www.facebook.com/STC/"
                        target="_blank"
                        rel="noopener">
-                        <img src="https://poll.laywagif.com/assets/images/facebook.png" alt="Facebook" />
+                        <img src="https://assets.laywagif.com/assets/img/social/${
+                          footerTheme === 'dark' ? 'facebook-white' : 'facebook'
+                        }.png" alt="Facebook" />
                     </a>
                 </li>
                 <li>
@@ -34,7 +42,11 @@ const footerTemplate = (footerContent, stcLogo) => {
                        href="https://www.instagram.com/stc/"
                        target="_blank"
                        rel="noopener">
-                        <img src="https://poll.laywagif.com/assets/images/instagram.png" alt="Instagram" />
+                        <img src="https://assets.laywagif.com/assets/img/social/${
+                          footerTheme === 'dark'
+                            ? 'instagram-white'
+                            : 'instagram'
+                        }.png" alt="Instagram" />
                     </a>
                 </li>
                 <li>
@@ -42,7 +54,9 @@ const footerTemplate = (footerContent, stcLogo) => {
                        href="https://www.snapchat.com/add/stcnow"
                        target="_blank"
                        rel="noopener">
-                        <img src="https://poll.laywagif.com/assets/images/snapchat.png" alt="Snapchat" />
+                        <img src="https://assets.laywagif.com/assets/img/social/${
+                          footerTheme === 'dark' ? 'snapchat-white' : 'snapchat'
+                        }.png" alt="Snapchat" />
                     </a>
                 </li>
                 <li>
@@ -50,7 +64,9 @@ const footerTemplate = (footerContent, stcLogo) => {
                        href="https://www.linkedin.com/company/stc"
                        target="_blank"
                        rel="noopener">
-                        <img src="https://poll.laywagif.com/assets/images/linkedin.png" alt="Linkedin" />
+                        <img src="https://assets.laywagif.com/assets/img/social/${
+                          footerTheme === 'dark' ? 'linkedin-white' : 'linkedin'
+                        }.png" alt="Linkedin" />
                     </a>
                 </li>
             </ul>
@@ -60,7 +76,7 @@ const footerTemplate = (footerContent, stcLogo) => {
         <div class="stc-footer--copyright-content">
             <a href="http://stc.com.sa" target="_blank" rel="noopener">
                 <img
-                     src="https://poll.laywagif.com/assets/images/stc-logo-copyright.png"
+                     src="https://assets.laywagif.com/assets/img/stc-logo-copyright.png"
                      alt="stc logo copyright" />
             </a>
             <p>${footerContent.copyright}</p>
@@ -70,20 +86,26 @@ const footerTemplate = (footerContent, stcLogo) => {
             <a
                href="${footerContent.copyright_links.contact_us.url}"
                target="_blank"
-               rel="noopener">${footerContent.copyright_links.contact_us.text}</a>
+               rel="noopener">${
+                 footerContent.copyright_links.contact_us.text
+               }</a>
             <span>.</span>
             <a
                href="${footerContent.copyright_links.privacy_policy.url}"
                target="_blank"
-               rel="noopener">${footerContent.copyright_links.privacy_policy.text}</a>
+               rel="noopener">${
+                 footerContent.copyright_links.privacy_policy.text
+               }</a>
             <span>.</span>
             <a
                href="${footerContent.copyright_links.terms_and_conditions.url}"
                target="_blank"
-               rel="noopener">${footerContent.copyright_links.terms_and_conditions.text}</a>
+               rel="noopener">${
+                 footerContent.copyright_links.terms_and_conditions.text
+               }</a>
         </div>
     </div>
-    `
-}
+    `;
+};
 
 export default footerTemplate;
