@@ -1,6 +1,6 @@
 // GLOBAL STYLING
-@import "./fonts";
-@import "./mob-view";
+@import './fonts';
+@import './mob-view';
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@
   margin: 0;
   outline: 0;
   border: 0;
-  font-family: "STCForward";
+  font-family: 'STCForward';
   font-weight: normal;
 }
 
@@ -28,6 +28,7 @@ a {
 .stc-footer-template {
   background-color: #fff;
   font-size: 15px;
+  width: 100%;
   * {
     color: #868e96 !important;
   }
